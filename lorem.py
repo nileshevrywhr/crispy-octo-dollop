@@ -4,7 +4,9 @@ import requests, json, datetime, pytz
 from dateutil import parser
 from io import BytesIO
 
-AW_KEY      = "PlYNYwY61E9c7YOJyoZfYDEFEGwywR71"
+# curl -X GET "http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=5rhW9bSSmFZZbuz5xdqaFO3tLBAGs2qo&q=28.5672334%2C77.3603642"
+
+AW_KEY      = "5rhW9bSSmFZZbuz5xdqaFO3tLBAGs2qo"
 LOCATION    = "3146227"
 url         = f"http://dataservice.accuweather.com/currentconditions/v1/{LOCATION}?apikey={AW_KEY}"
 
