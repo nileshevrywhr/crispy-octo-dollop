@@ -17,8 +17,8 @@ pygame.mixer.init()
 response = requests.get(url)
 if response.status_code == 200:
     data = response.json()[0]
-    with open("response.json", "w") as fw:
-        json.dump(data, fw)
+    # with open("response.json", "w") as fw:
+    #     json.dump(data, fw)
     weather_text = data["WeatherText"]
     has_precipitation = data["HasPrecipitation"]
     temperature_celsius = data["Temperature"]["Metric"]["Value"]
